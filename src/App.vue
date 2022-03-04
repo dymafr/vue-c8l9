@@ -28,7 +28,7 @@ function addProductToCart(productId: number): void {
   <div class="app-container">
     <TheHeader class="header" />
     <Shop
-      :products="products"
+      :products="state.products"
       @add-product-to-cart="addProductToCart"
       class="shop"
     />

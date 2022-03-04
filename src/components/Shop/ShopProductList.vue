@@ -5,6 +5,7 @@ import ShopProduct from './ShopProduct.vue';
 defineProps<{
   products: ProductInterface[];
 }>();
+
 const emit = defineEmits<{
   (e: 'addProductToCart', productId: number): void;
 }>();
